@@ -129,15 +129,20 @@
     }
 
     :deep(.release-notes-btn) {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
         background-color: var(--ks-background-info);
         color: var(--ks-content-info);
         border: 1px solid var(--ks-border-info);
         font-family: 'Courier New', Courier, monospace;
         white-space: nowrap;
+        padding: 0.5rem 1rem;
+        border-radius: var(--el-border-radius-base);
         
         .material-design-icon {
-            position: absolute;
-            bottom: 0;
+            display: flex;
+            align-items: center;
         }
         
         @media (max-width: 576px) {
