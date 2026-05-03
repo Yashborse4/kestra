@@ -637,13 +637,11 @@
   gap: var(--spacer-sm, 0.75rem);
   background: var(--ks-background-panel);
   border-bottom: 1px solid var(--ks-border-primary);
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   position: sticky;
   top: 0;
-  z-index: 1;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  width: calc(100% + 2rem);
+  z-index: 10;
+  border-radius: var(--el-border-radius-base) var(--el-border-radius-base) 0 0;
 }
 
 .doc-search {
@@ -695,8 +693,9 @@
   background: var(--ks-background-panel);
   border: 1px solid var(--ks-border-primary);
   border-radius: var(--el-border-radius-base);
-  padding: 1rem 1.25rem;
+  padding: 1.5rem;
   box-shadow: none;
+  margin-bottom: 1rem;
 }
 
 /* Collapsibles */
@@ -704,8 +703,8 @@
   background: var(--ks-background-card);
   border: 1px solid var(--ks-border-primary);
   border-radius: var(--el-border-radius-base);
-  margin-top: 0.75rem;
-  overflow-x: scroll;
+  margin-top: 1rem;
+  overflow-x: auto;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 :deep(details.doc-collapsible[open]) {
@@ -742,10 +741,10 @@
   opacity: 1;
 }
 :deep(details.doc-collapsible .doc-collapsible__content) {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: var(--spacer-sm, 0.75rem);
+  gap: var(--spacer, 1rem);
 }
 
 /* Card grid + card */
@@ -763,11 +762,11 @@
   background: var(--ks-background-panel);
   border: 1px solid var(--ks-border-primary);
   border-radius: var(--el-border-radius-base);
-  padding: 1rem;
+  padding: 1.25rem;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 0.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   min-width: 0;
 }
